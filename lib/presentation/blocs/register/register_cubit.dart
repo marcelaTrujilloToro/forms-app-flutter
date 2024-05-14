@@ -18,8 +18,6 @@ class RegisterCubit extends Cubit<RegisterFormState> {
           isValid:
               Formz.validate([state.username, state.password, state.email])),
     );
-
-    print('Submit $state');
   }
 
   void usernameChanged(String value) {
